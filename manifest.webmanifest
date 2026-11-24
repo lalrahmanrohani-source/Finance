@@ -1,0 +1,20 @@
+{
+  "id": "/Finance/",
+  "name": "LAL Rahman Finance Management System",
+  "short_name": "LAL Finance",
+  "description": "Offline finance management for accounts, Money Held, loans, expenses, statements and vouchers.",
+  "start_url": "/Finance/",
+  "scope": "/Finance/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#f2f5fa",
+  "theme_color": "#101b35",
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "/Finance/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/Finance/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/Finance/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/Finance/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
