@@ -1,25 +1,30 @@
-LAL Finance Management System — Updated Project
+د LAL Finance سیستم — د Offline اصلاح شوی اپډېټ
 
-GitHub Pages deployment:
-1. Extract this ZIP file.
-2. Open the inner folder named "Finance 4".
-3. Upload ALL files inside that folder directly to the ROOT of your GitHub repository (do not upload the folder itself).
-4. Keep index.html, manifest.json, sw.js, and all PNG icons together in the repository root.
-5. Wait for GitHub Pages to finish publishing, then refresh the site.
+د GitHub Pages اپلوډ:
+1. ZIP فایل Extract کړه.
+2. دننه د "Finance 4" فولډر خلاص کړه.
+3. د همدې فولډر ټول فایلونه د GitHub Repository اصلي (ROOT) برخې ته Upload کړه؛ خپله فولډر مه Upload کوه.
+4. index.html، manifest.json، sw.js او ټول PNG عکسونه باید په یوه ROOT فولډر کې وي.
+5. د GitHub Pages تر خپرېدو وروسته، لینک په Chrome کې د انټرنېټ په حالت کې یو ځل خلاص کړه او لږ تر لږه 10-20 ثانیې انتظار وکړه.
+6. بیا یې Install / Add to Home Screen کړه. یو ځل یې آنلاین پرانیستل اړین دي، څو Offline فایلونه په موبایل کې Cache شي.
+7. د Offline ازموینې لپاره، اپ بند کړه، انټرنېټ بند کړه او بیا اپ خلاص یا Refresh کړه.
 
-Data safety:
-- The application keeps its existing local database key: finance_ledger_v3.
-- Do not clear Chrome site data or uninstall the installed app before making a backup.
-- Download a backup from Settings before replacing the deployed files.
-- Uploading website files does not move data from one device/browser to another. Restore a backup only when you intend to replace the local records.
+د Offline اصلاح:
+- د Service Worker نوې نسخه او جلا Cache نوم فعال شو.
+- د اپ مهم فایلونه د نصب پر مهال Cache ته په بشپړ ډول خوندي کېږي.
+- د انټرنېټ پر مهال تازه پاڼه Cache ته خوندي کېږي.
+- د انټرنېټ د بندېدو پر مهال سیستم له Cache څخه پرانیستل کېږي.
+- د زړو LAL Finance Cache نسخې د نوې نسخې له فعالېدو وروسته پاکېږي.
 
-Requested changes in this build:
-- Money Held: removed Live Search, the History option, and the separate transaction-history table. The balances page has one complete PDF export button showing current balances.
-- Loans: Register Loan, Send Loan, Receive Loan, Statement Loan, Delete Loan.
-- Shortage: only the two calculation summaries remain.
-- General Search and Calculator are removed from the navigation and pages.
-- Currency Exchange supports custom From/To currency codes, amount and rate, and each saved entry can be deleted.
-- Each saved Account deposit/withdrawal, Account opening balance, Money Held deposit/withdrawal, Loan sent/received, and Personal Expense now shows a Download Receipt button immediately after saving.
-- Account, Money Held, Loan, and Personal Expenses statements retain a Receipt action on every transaction row. Receipt vouchers download as PNG images.
+د معلوماتو خوندیتوب:
+- د پخواني ډیټابېس نوم هماغسې ساتل شوی: finance_ledger_v3.
+- تر اپلوډ مخکې له Settings څخه Backup واخله.
+- د Chrome Site Data مه پاکوه او زوړ نصب شوی اپ مه Uninstall کوه، تر څو نوی اپډېټ او معلومات دې تایید کړي نه وي.
+- د ویب فایلونو اپلوډ د یوه موبایل معلومات بل موبایل ته نه لېږدوي.
 
-PWA files and icons are retained from the supplied source project.
+د رسیدونو او نورو اصلاحاتو تفصیل:
+- Accounts، Money Held، Loans او Personal Expenses کې د ثبت شوې معاملې وروسته د رسید ډاونلوډ شته.
+- په Statement کې د هرې معاملې مخې ته Receipt تڼۍ شته.
+- نورې غوښتل شوې اصلاحات او ډیزاین د سرچینې له فایل سره ساتل شوي دي.
+
+یادونه: PWA اپ د لومړي ځل لپاره باید آنلاین خلاص شي. وروسته له دې چې فایلونه Cache شي، Offline کار کوي. که GitHub Pages ته فایلونه لا نه وي Upload شوي، دا ZIP یوازې په خپله د آنلاین لینک نسخه نه بدلوي.

@@ -255,7 +255,9 @@ async function installFinanceApp(){if(!financeInstallPrompt){alert('Open this si
 window.addEventListener('appinstalled',()=>{const b=document.getElementById('installAppBtn');if(b)b.classList.add('hide');});
 if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js', {scope:'./'}).catch(err => console.warn('Offline install setup could not start:', err));
+    navigator.serviceWorker.register('./sw.js', {scope:'./', updateViaCache:'none'})
+      .then(registration => registration.update().catch(() => undefined))
+      .catch(err => console.warn('Offline install setup could not start:', err));
   });
 }
 </script></body></html>
